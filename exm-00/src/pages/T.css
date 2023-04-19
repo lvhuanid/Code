@@ -1,0 +1,7 @@
+ .my-port {
+    width: 20px;
+    height: 20px;
+    border: 2px solid #31d0c6;
+    border-radius: 100%;
+    background: #fff;
+  }
