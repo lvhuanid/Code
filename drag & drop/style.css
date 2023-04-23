@@ -1,0 +1,36 @@
+*{
+    margin: 0;
+    padding: 0;
+    background-origin: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #e3e3e3;
+}
+.container{
+    width: 630px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+}
+.container .box{
+    width: 200px;
+    height: 200px;
+    position: relative;
+    border-radius: 5px;
+    border: 2px solid #333;
+}
+.container .box .image{
+    width: 100%;
+    height: 100%;
+    border-radius: 5px;
+    background-color: yellow;
+}
+.box .hover{
+    border: 2px dashed #333;
+    
+}
