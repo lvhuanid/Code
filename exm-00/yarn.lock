@@ -70,6 +70,11 @@
   resolved "https://registry.yarnpkg.com/@antv/x6-geometry/-/x6-geometry-2.0.5.tgz#c158317d74135bedd78c2fdeb76f9c7cfa0ef0aa"
   integrity sha512-MId6riEQkxphBpVeTcL4ZNXL4lScyvDEPLyIafvWMcWNTGK0jgkK7N20XSzqt8ltJb0mGUso5s56mrk8ysHu2A==
 
+"@antv/x6-react-shape@^2.1.2":
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/@antv/x6-react-shape/-/x6-react-shape-2.1.2.tgz#66f1865ff98c4c7c9f7dd96e76c9b6afc95bb09e"
+  integrity sha512-kNflTM88oyQwfx9H1FQNAK1YdzEnB5vUtlcyU/5WZikbXGuaRmcJUBpSDMJt+AQ8ng3c2joKYQwWHQWeV6RgNw==
+
 "@antv/x6@^2.9.7":
   version "2.9.7"
   resolved "https://registry.yarnpkg.com/@antv/x6/-/x6-2.9.7.tgz#d1af6b8a21e67770b8661e81e3548bbfca9e842f"
