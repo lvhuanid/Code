@@ -1,0 +1,29 @@
+{
+  "data": {
+    "rpc-reply": {
+      "@xmlns": "urn:ietf:params:xml:ns:netconf:base:1.0",
+      "@messge-id": "d282fcb0-f301-11ed-93c7-09bccb98c52c"
+    },
+    "value": {
+      "messageId": "d282fcb0-f301-11ed-93c7-09bccb98c52c",
+      "data": {
+        "$": {
+          "xmlns": "urn:ietf:params:xml:ns:netconf:base:1.0",
+          "xmlns:nc": "urn:ietf:params:xml:ns:netconf:base:1.0",
+          "message-id": "d282fcb0-f301-11ed-93c7-09bccb98c52c"
+        },
+        "set-ptp-type-out-parameter": {
+          "$": { "xmlns": "com:optel:yang:otn:extension" },
+          "eq-name": "EH=/shelf=1/slot=4/EQ=TEF_08",
+          "port-id": "8",
+          "result": "success",
+          "ptp-name": "PTP=/shelf=1/slot=4/port=8"
+        }
+      },
+      "errors": [],
+      "raw": "<?xml version=\"1.0\" encoding=\"UTF-8\"?>\n<rpc-reply xmlns=\"urn:ietf:params:xml:ns:netconf:base:1.0\" xmlns:nc=\"urn:ietf:params:xml:ns:netconf:base:1.0\" message-id=\"d282fcb0-f301-11ed-93c7-09bccb98c52c\">\n  <set-ptp-type-out-parameter xmlns=\"com:optel:yang:otn:extension\">\n    <eq-name>EH=/shelf=1/slot=4/EQ=TEF_08</eq-name>\n    <port-id>8</port-id>\n    <result>success</result>\n    <ptp-name>PTP=/shelf=1/slot=4/port=8</ptp-name>\n  </set-ptp-type-out-parameter>\n</rpc-reply>"
+    }
+  },
+  "result": true,
+  "message": ""
+}

@@ -27,3 +27,9 @@ commissions         佣金
 signature           签名
 beta            β
 disclose            披露
+
+
+5/13 设备图，模型驱动 620 m5b 和 m3b 机框图
+
+5/20 修复bug 优化设备图，正在做业务视图
+

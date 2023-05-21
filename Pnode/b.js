@@ -9,7 +9,7 @@ const children = Object.entries(chassis_config).map(chassis => {
         const {name, model: preconf} = child;
         const regex = /\/shelf=(\d+)\/slot=(\d+)/;
         const match = name.match(regex);
-        let location;
+        let location
         if (match) {
             const shelf = match[1];
             const slot = match[2];

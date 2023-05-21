@@ -1,0 +1,28 @@
+Optical@1cli
+
+
+info yarn config
+{
+  'version-tag-prefix': 'v',
+  'version-git-tag': true,
+  'version-commit-hooks': true,
+  'version-git-sign': false,
+  'version-git-message': 'v%s',
+  'init-version': '1.0.0',
+  'init-license': 'MIT',
+  'save-prefix': '^',
+  'bin-links': true,
+  'ignore-scripts': false,
+  'ignore-optional': false,
+  registry: 'https://registry.yarnpkg.com',
+  'strict-ssl': true,
+  'user-agent': 'yarn/1.22.19 npm/? node/v18.15.0 win32 x64',
+  lastUpdateCheck: 1683861791251
+}
+yarn 设置淘宝
+yarn config list
+yarn config delete proxy
+yarn config set registry https://registry.npm.taobao.org
+
+const a = [{id:12},{id:13},{id:14}]
+const b = [{id:11},{id:13},{id:16}]
