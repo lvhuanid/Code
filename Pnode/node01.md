@@ -44,7 +44,7 @@ const myCanvas = <HTMLCanvasElement>document.getElementById("canvas");
  2001  cd data
  2002  ll
  2003  cd
- 2004  tar cvf ~hx/data0517.tar data
+ 2004  tar cvf ~hx/data0522.tar data
 
 ```
 需要使用 su-
@@ -65,3 +65,73 @@ Associated 关联
 Implicitly Assigned Raw Values
 
 card-1-20
+
+## security Vulnerabilities
+https://youtu.be/ypNKKYUJE5o
+
+
+```jsx
+import React from "react";
+import {BrowserRouter as Router, useLocation} from "react-router-dom";
+
+export default function Root() {
+    return (<Router><QueryParamsDemo /></Router>)
+}
+
+function useQuery() {
+    const { search } = useLocation();
+    return React.useMemo(()=> URLSearchParams(search), [search])
+}
+
+function QueryParamsDemo() {
+    let query = useQuery();
+
+    function validateURL(url) {
+
+        if(userSuppliedUrl) {
+            return url;
+        }
+        return "/";
+    }
+
+    return(
+        <div>
+            <h2>Return Home</h2>
+            <a href={validataeURL(query.get("redirect"))}>click</a>
+        </div>
+    )
+}
+```
+```js
+app.get("/api/data", async (req, res) => {
+    const allowedURLs = ["https://baidu.com", "https://bilibili.com"];
+
+    const url = req.query.url;
+    try {
+        if(!allowedURLs.includes(url)) {
+            return res.status(400).json({ error: "Bad URL"});
+        }
+
+        const response = await fetch(url);
+        const data = await response.json();
+
+        res.status(200).json({data: data})
+    } catch (err) {
+        console.log(err)
+        res.status(500).json({err: err.msg})
+    }
+})
+```
+```jsx
+import crypto from "crypto"
+
+export function checkToken(userSupplied) {
+    const account = account.retriveToken(userSupplied)
+    if (account) {
+        if (crypto.timingSafeEqual(account.service.token, user.service.token)) {
+            return true
+        }
+    }
+    return false
+}
+```

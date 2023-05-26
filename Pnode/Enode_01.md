@@ -33,3 +33,27 @@ disclose            披露
 
 5/20 修复bug 优化设备图，正在做业务视图
 
+protocolshi
+
+
+## 右侧竖梯形
+```js
+    points: "1 0.5,1 3,2 2.5,2 1",
+    label: "MUX"
+```
+
+### 左侧
+```js
+    points: "1 1.35,1 2.65,2 3,2 1",
+    label: "MUX"
+```
+
+### 未搬代码
+```js chasis.js 425
+if (ChassisConfig?.[actual]?.led) {
+    // Add alarm
+    let className = styles.led_COMMON;
+    if (child?.mcu && child?.mcu?.state.active === "false") {
+        className += ` ${styles.led_DISABLE}`;
+}
+```
